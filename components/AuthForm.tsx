@@ -56,8 +56,9 @@ const AuthForm = ({ type }: { type: FormType }) => {
             })
           : await signInUser({ email: values.email });
       setAccountId(user.accountId);
+      setErrorMessage(user.error);
     } catch {
-      setErrorMessage("Failed to create account. Please try again.");
+      setErrorMessage("Something went wrong. Please try again.");
     } finally {
       setIsLoading(false);
     }
@@ -87,8 +88,9 @@ const AuthForm = ({ type }: { type: FormType }) => {
                       />
                     </FormControl>
                   </div>
-
-                  <FormMessage className="shad-form-message" />
+                  <FormMessage className="shad-form-message">
+                    {errorMessage}
+                  </FormMessage>
                 </FormItem>
               )}
             />
@@ -109,8 +111,9 @@ const AuthForm = ({ type }: { type: FormType }) => {
                     />
                   </FormControl>
                 </div>
-
-                <FormMessage className="shad-form-message" />
+                <FormMessage className="shad-form-message">
+                  {errorMessage}
+                </FormMessage>
               </FormItem>
             )}
           />
@@ -131,7 +134,7 @@ const AuthForm = ({ type }: { type: FormType }) => {
               />
             )}
           </Button>
-          {errorMessage && <p className="error-message">*{errorMessage}</p>}
+
           <div className="body-2 flex justify-center">
             <p className="text-light-100">
               {type === "sign-in"
