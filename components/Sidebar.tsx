@@ -18,16 +18,18 @@ const Sidebar = ({ fullName, email, avatar }: Props) => {
       <Link href="/">
         <div className="hidden h-auto items-center gap-x-3 lg:flex">
           <Image
-            src="/assets/icons/mobileLogo.svg"
+            // src="/assets/icons/mobileLogo.svg"
+            src="/assets/images/whrLogo.png"
             alt="logo"
             width={53}
             height={52}
             className="h-auto"
           />
-          <h1 className="text-[24px] font-medium text-[#FA7275]">DropOnline</h1>
+          <h1 className="text-[24px] font-medium text-[#5b62f4]">DropOnline</h1>
         </div>
         <Image
-          src="/assets/icons/logo-brand.svg"
+          // src="/assets/icons/logo-brand.svg"
+          src="/assets/images/whrLogo.png"
           alt="logo"
           width={52}
           height={52}

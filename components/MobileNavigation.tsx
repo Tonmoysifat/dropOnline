@@ -36,13 +36,14 @@ const MobileNavigation = ({
     <header className="mobile-header">
       <Link href="/" className="flex items-center gap-x-3">
         <Image
-          src="/assets/icons/mobileLogo.svg"
+          // src="/assets/icons/mobileLogo.svg"
+          src="/assets/images/whrLogo.png"
           alt="logo"
           width={46}
           height={52}
           className="h-auto"
         />
-        <h1 className="text-[20px] font-medium text-[#FA7275]">DropOnline</h1>
+        <h1 className="text-[20px] font-medium text-[#5b62f4]">DropOnline</h1>
       </Link>
       <Sheet open={open} onOpenChange={setOpen}>
         <SheetTrigger>
