@@ -37,13 +37,14 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         <div className="mb-16 lg:hidden">
           <div className="flex items-center gap-x-5">
             <Image
-              src="/assets/icons/mobileLogo.svg"
+              // src="/assets/icons/mobileLogo.svg"
+              src="/assets/images/whrLogo.png"
               alt="logo"
               width={82.63}
               height={81.07}
               className="h-auto"
             />
-            <h1 className="text-[37.42px] font-medium text-[#FA7275]">
+            <h1 className="text-[37.42px] font-medium text-[#5b62f4]">
               DropOnline
             </h1>
           </div>

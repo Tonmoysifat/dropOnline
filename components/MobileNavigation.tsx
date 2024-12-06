@@ -43,7 +43,7 @@ const MobileNavigation = ({
           height={52}
           className="h-auto"
         />
-        <h1 className="text-[20px] font-medium text-[#5b62f4]">DropOnline</h1>
+        <h1 className="text-[#5b62f4 ] text-[20px] font-medium">DropOnline</h1>
       </Link>
       <Sheet open={open} onOpenChange={setOpen}>
         <SheetTrigger>
